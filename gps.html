@@ -1,7 +1,7 @@
-CTYPE html>
+<!DCTYPE html>
 <html>
     <head>
-          <title>Simple Map</title>
+          <title>GPS Map</title>
               <meta name="viewport" content="initial-scale=1.0">
                   <meta charset="utf-8">
                       <style>
@@ -17,20 +17,21 @@ CTYPE html>
                                                                                                  padding: 0;
                                                                                                        }
                                                                                                            </style>
-                                                                                                             </head>
-                                                                                                               <body>
-                                                                                                                     <div id="map"></div>
-                                                                                                                         <script>
-                                                                                                                                 var map;
-                                                                                                                                       function initMap() {
-                                                                                                                                                 map = new google.maps.Map(document.getElementById('map'), {
-                                                                                                                                                             center: {lat: 25.123, lng: 121.578},
-                                                                                                                                                                       zoom: 16
-                                                                                                                                                                               });
-                                                                                                                                                                                     }
-                                                                                                                                                                                         </script>
-                                                                                                                                                                                             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2CO__uD7m4YZBdT0tV5PAFEd0pBu-KcU&callback=initMap"
-                                                                                                                                                                                                   async defer></script>
-                                                                                                                                                                                                   </body>
-                                                                                                                                                                                                 </html>
+    </head>
+  
+    <body>
+      <div id="map"></div>
+      <script>
+     var map;
+  function initMap() {
+map = new google.maps.Map(document.getElementById('map'), {
+center: {lat: 25N02, lng: 121E34},
+ zoom: 16
+         });
+         }
+   </script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2CO__uD7m4YZBdT0tV5PAFEd0pBu-KcU&callback=initMap"
+  async defer></script>
+   </body>
+</html>
 
